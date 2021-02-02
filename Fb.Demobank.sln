@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fb.Demobank.WebUi.AngularClient", "Fb.Demobank.WebUi.AngularClient\Fb.Demobank.WebUi.AngularClient.csproj", "{422CCB10-7CC4-42DC-9965-2FF94607D1C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fb.Demobank.WebUi.AngularClient", "Fb.Demobank.WebUi.AngularClient\Fb.Demobank.WebUi.AngularClient.csproj", "{422CCB10-7CC4-42DC-9965-2FF94607D1C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B30ED93B-50F9-4198-A55D-D96326A8C470}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{45C0A4C2-E39B-4A0C-8FF8-A3A8AB041CEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "webui", "webui", "{F2BBFB63-0EE6-4DC2-8610-0924B5E79544}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastruktur", "infrastruktur", "{B1A6DC42-6D57-4267-8E45-32750085E7A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{CCF9ED7C-01CE-4244-A8FF-74EAF3A85012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fb.Demobank.Application", "Fb.Demobank.Application\Fb.Demobank.Application.csproj", "{A5368F67-0F37-4DD3-B2B6-BBD7E6B6679B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fb.Demobank.Domene", "Fb.Demobank.Domene\Fb.Demobank.Domene.csproj", "{A7554C3A-34A1-43D2-B2B0-6491E7BC4641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fb.Demobank.Persistence", "Fb.Demobank.Persistence\Fb.Demobank.Persistence.csproj", "{A7064649-8FA9-49D6-8B9E-D8708CF8E392}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +31,30 @@ Global
 		{422CCB10-7CC4-42DC-9965-2FF94607D1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{422CCB10-7CC4-42DC-9965-2FF94607D1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{422CCB10-7CC4-42DC-9965-2FF94607D1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5368F67-0F37-4DD3-B2B6-BBD7E6B6679B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5368F67-0F37-4DD3-B2B6-BBD7E6B6679B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5368F67-0F37-4DD3-B2B6-BBD7E6B6679B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5368F67-0F37-4DD3-B2B6-BBD7E6B6679B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7554C3A-34A1-43D2-B2B0-6491E7BC4641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7554C3A-34A1-43D2-B2B0-6491E7BC4641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7554C3A-34A1-43D2-B2B0-6491E7BC4641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7554C3A-34A1-43D2-B2B0-6491E7BC4641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7064649-8FA9-49D6-8B9E-D8708CF8E392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7064649-8FA9-49D6-8B9E-D8708CF8E392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7064649-8FA9-49D6-8B9E-D8708CF8E392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7064649-8FA9-49D6-8B9E-D8708CF8E392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{422CCB10-7CC4-42DC-9965-2FF94607D1C0} = {F2BBFB63-0EE6-4DC2-8610-0924B5E79544}
+		{F2BBFB63-0EE6-4DC2-8610-0924B5E79544} = {B30ED93B-50F9-4198-A55D-D96326A8C470}
+		{B1A6DC42-6D57-4267-8E45-32750085E7A4} = {B30ED93B-50F9-4198-A55D-D96326A8C470}
+		{CCF9ED7C-01CE-4244-A8FF-74EAF3A85012} = {B30ED93B-50F9-4198-A55D-D96326A8C470}
+		{A5368F67-0F37-4DD3-B2B6-BBD7E6B6679B} = {CCF9ED7C-01CE-4244-A8FF-74EAF3A85012}
+		{A7554C3A-34A1-43D2-B2B0-6491E7BC4641} = {CCF9ED7C-01CE-4244-A8FF-74EAF3A85012}
+		{A7064649-8FA9-49D6-8B9E-D8708CF8E392} = {B1A6DC42-6D57-4267-8E45-32750085E7A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9FAD6A29-42D9-40A7-AA1E-9ED90A620A1E}
